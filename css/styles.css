@@ -1,0 +1,109 @@
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+body {
+    padding-top: 4.5rem; /* Adjust for fixed navbar */
+    background-image: url('../img/bkIMG.jpeg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    /* Optional: Set background color as fallback */
+    background-color: #f8f9fa; /* Replace with desired background color */
+}
+
+
+
+/* Global */
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark);
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.navbar a:hover {
+    color: #f8f9fa;
+}
+
+/* Hero */
+.hero {
+    background-color: var(--light);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.destinations {
+   
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.card {
+    height: 100%; /* Ensure all cards are the same height */
+}
+
+.card-img-top {
+    height: 350px; /* Adjust the height of the image as needed */
+    object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+}
+
+.destinations h2 {
+    font-size: 2rem;
+    color: var(--light);    
+    background-color: var(--dark);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    display:inline-block;
+    
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+.footer a:hover {
+    color: #cccccc;
+}
+
+
+
+
+
+
+
+
+
+
+
