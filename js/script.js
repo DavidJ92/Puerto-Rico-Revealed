@@ -1,19 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     var video = document.getElementById('video-background');
     
-    // Play the video on user interaction (click or tap)
-    document.addEventListener('click', function() {
-        if (video.paused) {
-            video.play();
-        }
-    });
+    // Attempt to play the video automatically
+    video.play().catch(function(error) {
+        // Autoplay was prevented, wait for user interaction
+        console.warn('Autoplay was prevented. Waiting for user interaction.');
 
-    // Optional: Pause the video if it's currently playing on user interaction
-    // document.addEventListener('click', function() {
-    //     if (video.paused) {
-    //         video.play();
-    //     } else {
-    //         video.pause();
-    //     }
-    // });
+        // Add a click event listener to start playback on user interaction
+        document.addEventListener('click', function() {
+            if (video.paused) {
+                video.play();
+            }
+        });
+    });
 });
