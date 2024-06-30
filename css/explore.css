@@ -151,7 +151,7 @@ nav {
     color: #fff; /* Ensure text color contrasts well with background */
     padding: 1rem; /* Add padding for text visibility */
     position: absolute; /* Position the h1 absolutely */
-    top: 16%; /* Center vertically */
+    top: 15.6%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center the element precisely */
     width: 93.2%; /* Take full width of parent */
