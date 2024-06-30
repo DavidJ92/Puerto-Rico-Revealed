@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Puerto Rico</title>
+    <link rel="stylesheet" href="./css/explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./img/puertoricorevealed-img.jpeg" alt="Your Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Explore Uncharted Destinations in Puerto Rico</h1>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search">
+        <div class="container">
+            <div class="category-dropdown">
+                <div class="custom-select">
+                    <span id="selected-category">Select Category <spam class="arrow">&#x25BE;</span>
+                    <select name="category-select" id="category-select">
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="restaurants">Restaurants</option>
+                        <option value="stays">Stays</option>
+                        <option value="places-to-visit">Places must Visit</option>
+                    </select>
+                    <ul>
+                        <li><a href="restaurant.html" data-value="restaurants">Restaurants</a></li>
+                        <li><a href="stays.html" data-value="stays">Stays</a></li>
+                        <li><a href="places-to-visit.html" data-value="places-to-visit">Places must Visit</a></li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Regions/Themes Section -->
+    <section class="regions">
+        <div class="container">
+            <!-- Restaurants Category -->
+            <div class="category" id="restaurants">
+                <h2>Feature Restaurants</h2>
+                <div class="item">
+                    <img src="restaurant1.jpg" alt="Restaurant 1">
+                    <h3>Restaurant 1</h3>
+                    <p>Description of Restaurant 1</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="item">
+                    <img src="restaurant2.jpg" alt="Restaurant 2">
+                    <h3>Restaurant 2</h3>
+                    <p>Description of Restaurant 2</p>
+                    <a href="#">View Details</a>
+                </div>
+                <!-- Add more restaurant items as needed -->
+            </div>
+
+            <!-- Stays Category -->
+            <div class="category" id="stays">
+                <h2>Feature Stays</h2>
+                <div class="item">
+                    <img src="stay1.jpg" alt="Stay 1">
+                    <h3>Stay 1</h3>
+                    <p>Description of Stay 1</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="item">
+                    <img src="stay2.jpg" alt="Stay 2">
+                    <h3>Stay 2</h3>
+                    <p>Description of Stay 2</p>
+                    <a href="#">View Details</a>
+                </div>
+                <!-- Add more stay items as needed -->
+            </div>
+
+            <!-- Places to Visit Category -->
+            <div class="category" id="places-to-visit">
+                <h2>Feature Places must Visit</h2>
+                <div class="item">
+                    <img src="place1.jpg" alt="Place 1">
+                    <h3>Place 1</h3>
+                    <p>Description of Place 1</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="item">
+                    <img src="place2.jpg" alt="Place 2">
+                    <h3>Place 2</h3>
+                    <p>Description of Place 2</p>
+                    <a href="#">View Details</a>
+                </div>
+                <!-- Add more place items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Category Filtering -->
+    <script src="./js/explore.js"></script>
+
+    <script>
+        // Toggle function for responsive navigation
+        function toggleMenu() {
+            var navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

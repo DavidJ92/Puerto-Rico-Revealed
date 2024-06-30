@@ -11,15 +11,13 @@
 
 body {
     padding-top: 4.5rem; /* Adjust for fixed navbar */
-    background-image: url('../img/bkIMG.jpeg');
-    background-size: cover; /* Cover the entire background */
+    background-image: url('../img/restaurantBKimg.jpg');
+    background-size: contain; /* Cover the entire background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     /* Optional: Set background color as fallback */
-    background-color: #f8f9fa; /* Replace with desired background color */
+    background-color: white; /* Replace with desired background color */
 }
-
-
 
 /* Global */
 a {
@@ -50,11 +48,6 @@ a:hover {
     padding: 4rem 0;
     text-align: center;
 }
-.btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    margin-bottom: 10px;
-}
 
 .hero h1 {
     font-size: 3rem;
@@ -75,13 +68,12 @@ a:hover {
     object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
 }
 
-.destinations h2 {
+.container h2 {
     font-size: 2rem;
-    color: var(--light);    
-    background-color: var(--dark);
+    color: black;    
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
-    display:inline-block;
+    
     
 }
 
