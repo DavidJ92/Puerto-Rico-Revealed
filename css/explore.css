@@ -2,8 +2,8 @@
 :root {
     --primary-color: #007bff; /* Primary color for buttons and links */
     --secondary-color: #0056b3; /* Secondary color for active states */
-    --header-background: #333; /* Background color for header */
-    --header-text-color: #fff; /* Text color for header */
+    --header-background: white; /* Background color for header */
+    --header-text-color: black; /* Text color for header */
     --hero-background: #f0f0f0; /* Background color for hero section */
     --text-color: #666; /* Default text color */
     --footer-background: #333; /* Background color for footer */
@@ -42,7 +42,7 @@ header {
     padding: var(--header-padding-y) 0;
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0px;
     z-index: 1000;
 }
 
